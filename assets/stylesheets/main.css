@@ -9,12 +9,14 @@
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -51,25 +53,40 @@ main p:last-child {
 
 main a {
   color: white;
+  -webkit-text-decoration-line: none;
   text-decoration-line: none;
 }
 
 header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 header li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
   border-right: 0.25px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 36px;
   font-size: 13px;
 }
 
 header li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -80,6 +97,20 @@ header {
 header nav {
   width: 1000px;
   margin: 0 auto;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--darker-gray)),
+    color-stop(var(--dark-gray)),
+    to(var(--light-gray))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--darker-gray),
+    var(--dark-gray),
+    var(--light-gray)
+  );
   background-image: linear-gradient(
     to bottom,
     var(--darker-gray),
@@ -94,16 +125,28 @@ header li:first-child a {
 }
 
 header li:last-child {
+  -webkit-box-flex: 1.5;
+  -ms-flex: 1.5;
   flex: 1.5;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: none;
 }
 
 header form {
   width: 80%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   border: 1px solid black;
   border-radius: 25px;
@@ -131,10 +174,14 @@ header a {
 }
 
 aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 aside li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
@@ -143,10 +190,14 @@ img {
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 20px 0;
   font-size: 11px;
   color: var(--footer-grey);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -168,11 +219,16 @@ footer a {
 }
 
 footer a:hover {
+  -webkit-text-decoration-line: underline;
   text-decoration-line: underline;
 }
 
 footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   text-align: center;
 }
@@ -197,6 +253,8 @@ footer div:first-child div p {
 }
 
 footer div:first-child div ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: 2px;
   text-align: center;
