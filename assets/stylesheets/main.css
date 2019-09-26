@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400&display=swap");
+
+:root {
+  --light-gray: #8d8d8d;
+  --dark-gray: #5f5f5f;
+  --darker-gray: #737373;
+  --footer-grey: #6e6e6e;
+  --blue-links: #0088cc;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hero {
+  color: white;
+  background: url(../images/your_verse_hero.jpg) center bottom no-repeat;
+  background-size: 1440px 1315px;
+  min-height: 85vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  margin: 60px 0;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 2rem;
+  font-weight: 300;
+  width: 60%;
+  margin: 0 auto;
+}
+
+main p:last-child {
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+main a {
+  color: white;
+  -webkit-text-decoration-line: none;
+  text-decoration-line: none;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  border-right: 0.25px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 36px;
+  font-size: 13px;
+}
+
+header li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header {
+  padding-top: 80px;
+}
+
+header nav {
+  width: 1000px;
+  margin: 0 auto;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(var(--darker-gray)),
+    color-stop(var(--dark-gray)),
+    to(var(--light-gray))
+  );
+  background-image: -o-linear-gradient(
+    top,
+    var(--darker-gray),
+    var(--dark-gray),
+    var(--light-gray)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    var(--darker-gray),
+    var(--dark-gray),
+    var(--light-gray)
+  );
+  border-radius: 5px;
+}
+
+header li:first-child a {
+  font-size: 1.4rem;
+}
+
+header li:last-child {
+  -webkit-box-flex: 1.5;
+  -ms-flex: 1.5;
+  flex: 1.5;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+}
+
+header form {
+  width: 80%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+
+header li:last-child input[type="search"] {
+  display: block;
+  height: 20px;
+  border: none;
+  width: 80%;
+  background: transparent;
+  padding-right: 10px;
+  color: white;
+}
+
+header label {
+  width: 20%;
+  text-align: center;
+  font-size: 11px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+aside li {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  font-size: 11px;
+  color: var(--footer-grey);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer div:first-child {
+  margin-right: 40px;
+}
+
+footer div:last-child {
+  width: 40%;
+}
+
+footer div:first-child p:last-child {
+  margin-top: 20px;
+}
+
+footer a {
+  color: var(--blue-links);
+  text-decoration: none;
+}
+
+footer a:hover {
+  -webkit-text-decoration-line: underline;
+  text-decoration-line: underline;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  text-align: center;
+}
+
+footer li {
+  border-right: 1px solid;
+  padding-right: 10px;
+}
+
+footer li:last-child {
+  border-right: none;
+  padding: 0;
+}
+
+footer div:first-child div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+footer div:first-child div p {
+  display: inline-block;
+}
+
+footer div:first-child div ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 2px;
+  text-align: center;
+}
+
+footer div:first-child div ul li:last-child {
+  padding-left: 10px;
+}
